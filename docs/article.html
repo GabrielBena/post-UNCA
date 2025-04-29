@@ -1,4 +1,10 @@
 <d-article>
+
+<figure>
+<img src='assets/grant_task_evolution.png' style='width: 100%'>
+<figcaption>Our framework performs matrix operations (translation, multiplication, rotation) through continuous cellular interactions evolving over time (from t=0 to t=60). The inset reveals the core mechanism: cells communicating only with neighbours, and interacting with a local fixed (but learned) heterogeneous substrate, are able to collectively solve mathematical tasks without explicit algorithms.</figcaption>
+</figure>
+
 <p>Cellular automata have long been celebrated for their ability to generate complex behaviours from simple, local rules, with well-known discrete models like Conway&#39;s Game of Life proven capable of universal computation.</p>
 <p>Recent advancements have extended cellular automata into continuous domains, raising the question whether these systems retain the capacity for universal computation.</p>
 <p>In parallel, neural cellular automata have emerged as a powerful paradigm where rules are learned via gradient descent rather than manually designed.</p>
@@ -6,11 +12,6 @@
 <p>We introduce a cellular automaton model, objective functions and training strategies to guide neural cellular automata toward universal computation in a continuous setting.</p>
 <p>Our experiments demonstrate the successful training of fundamental computational primitives — such as matrix multiplication and transposition — culminating in the emulation of a neural network solving the MNIST digit classification task directly within the cellular automata state.</p>
 <p>These results represent a foundational step toward realizing analogue general-purpose computers, with implications for understanding universal computation in continuous dynamics and advancing the automated discovery of complex cellular automata behaviours via machine learning.</p>
-<figure>
-<img src='assets/grant_task_evolution.png' style='width: 100%'>
-<figcaption>Our framework performs matrix operations (translation, multiplication, rotation) through continuous cellular interactions evolving over time (from t=0 to t=60). The inset reveals the core mechanism: cells communicating only with neighbours, and interacting with a local fixed (but learned) heterogeneous substrate, are able to collectively solve mathematical tasks without explicit algorithms.</figcaption>
-</figure>
-
 <h2 id='introduction'><strong>Introduction</strong></h2>
 <p>Cellular Automata (CA) represent a fascinating class of computational models that have captivated researchers across disciplines for their ability to produce complex behaviours from simple rules <d-cite key="computational_beauty"></d-cite>.</p>
 <p>At their core, CA typically consist of a grid of cells, each in one of a finite number of states, which evolve over discrete time steps based on a fixed deterministic rule.</p>
