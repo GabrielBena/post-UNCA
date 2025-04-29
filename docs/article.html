@@ -1,29 +1,8 @@
 <d-article>
+<p>Cellular automata have long been celebrated for their ability to generate complex behaviors from simple, local rules, with well-known discrete models like Conway's Game of Life proven capable of universal computation. Recent advancements have extended cellular automata into continuous domains, raising the question of whether these systems retain the capacity for universal computation. In parallel, neural cellular automata have emerged as a powerful paradigm where rules are learned via gradient descent rather than manually designed. This work explores the potential of neural cellular automata to develop a continuous Universal Cellular Automaton through training by gradient descent. We introduce a cellular automaton model, objective functions and training strategies to guide neural cellular automata toward universal computation in a continuous setting. Our experiments demonstrate the successful training of fundamental computational primitives --- such as matrix multiplication and transposition --- culminating in the emulation of a neural network solving the MNIST digit classification task directly within the cellular automata state. These results represent a foundational step toward realizing analog general-purpose computers, with implications for understanding universal computation in continuous dynamics and advancing the automated discovery of complex cellular automata behaviors via machine learning.</p>
+<h2 id='introduction'>Introduction</h2>
 
-<p>The typical process of a <a href='https://distill.pub/'>Distill.pub</a> article creation requires all contributors and editors to be familiar with version control (specifically Git) and web development, which sets an unnecessarily high barrier for entry to accept edits and suggestions from reviewers. This repository contains an article template and instructions for setting up a workflow based on Google Docs which exports the article HTML to GitHub. </p>
 
-<p>The workflow also uses a minimalistic Python web-server that automatically fetches new changes from GitHub and recompiles the article to serve the draft locally. We also provide a minimal Jekyll configuration that allows you to see changes live on GitHub Pages. </p>
-
-<p>This workflow was organically developed while writing our first Distill article <d-cite key="mordvintsev2020growing"></d-cite> and noticing that we really needed the collaborative functionality of Google Docs, but wanted a live preview of our article while working.</p>
-<h2 id='getting-started'>Getting Started</h2>
-
-<ul><li>Fork and rename the <a href='https://github.com/znah/gdocs_distill_template'>https:&#x2F;&#x2F;github.com&#x2F;znah&#x2F;gdocs_distill_template</a> repository. Convention is to name it &quot;post--<i>canonicalized-article-name</i>&quot;. </li>
-<li>Duplicate this Google Document for your article.<i> </i>This also duplicates the attached Google Script allowing export to GitHub.</li>
-<li>Update <i>github_repo</i> variable in above table to point to your GitHub repository.</li>
-<li>Click &quot;HTML Export&quot; -&gt; &quot;Run Export&quot;. You will be prompted for a GitHub API token the first time you run this. This is privately stored for your Google account and not accessible by anyone else opening the Google Doc. Give the token "repo" permissions. Get the token <a href='https://github.com/settings/tokens'>here</a>.</li></ul>
-
-<figure>
-<img src='export.png' style='width: 500px'>
-<figcaption>A sample image demonstrating how to export html to GitHub.</figcaption>
-</figure>
-
-<figure>
-<img src='token.png' style='width: 600px'>
-<figcaption>The permissions to give the token.</figcaption>
-</figure>
-<ul><li>Enable GitHub pages for the repository under <i>Settings</i>, if not already enabled. </li>
-<li>Update the <i>password</i><i><strong> </i></strong>parameter in main.html to a password of your choosing. The default password is <strong>selforgtheworld</strong>.</li>
-<li>Navigate to <i>https:&#x2F;&#x2F;username.github.com&#x2F;post--canonicalized-article-name&#x2F;public</i> to see a live draft of the page. This draft typically updates within 30-40 seconds after running an export. The link to the rendered version of this tutorial is <a href='https://eyvind.me/gdocs_distill_template/public/'>here</a><strong>.</strong></li></ul>
 
 <h2 id='optional-adding-to-existing-google-doc'>(Optional) Adding to Existing Google Doc</h2>
 <p>Alternatively you can install the script manually on an existing Google Doc.</p>
