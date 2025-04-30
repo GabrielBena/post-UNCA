@@ -69,38 +69,6 @@
     video {
       max-width: 100%;
     }
-    /* Custom width settings to make article wider */
-    d-article {
-      max-width: 900px !important; /* Increased from 800px */
-      width: 900px !important;
-      grid-column: middle;
-      font-size: 16px;
-    }
-    d-title, d-byline, d-bibliography {
-      max-width: 900px !important;
-      width: 900px !important;
-      grid-column: middle;
-    }
-    @media(min-width: 1280px) {
-      d-article {
-        max-width: 1000px !important;
-        width: 1000px !important;
-      }
-      d-title, d-byline, d-bibliography {
-        max-width: 1000px !important;
-        width: 1000px !important;
-      }
-    }
-    @media(min-width: 1600px) {
-      d-article {
-        max-width: 1100px !important;
-        width: 1100px !important;
-      }
-      d-title, d-byline, d-bibliography {
-        max-width: 1100px !important;
-        width: 1100px !important;
-      }
-    }
     .colab-root {
       display: inline-block;
       background: rgba(255, 255, 255, 0.75);
@@ -163,6 +131,13 @@
         border-right-width: 1px;
         border-right-style: solid;
         border-right-color: rgba(0, 0, 0, 0.1);
+
+        /* Widen title, byline, and article */
+        d-title,
+        d-byline,
+        d-article {
+          grid-column: 3 / 13; /* Adjust 3 / 13 for desired width */
+        }
       }
     }
 
@@ -177,6 +152,13 @@
         border-right-width: 1px;
         border-right-style: solid;
         border-right-color: rgba(0, 0, 0, 0.1);
+
+        /* Widen title, byline, and article */
+        d-title,
+        d-byline,
+        d-article {
+          grid-column: 3 / 13; /* Adjust 3 / 13 for desired width */
+        }
       }
     }
 
@@ -237,10 +219,10 @@
         grid-column-end: 14; 
       }
     }
-    /* so title is on one line */
-    d-title h1, d-title p {
+    /* so title is on one line - REMOVED to use wider rule */
+    /* d-title h1, d-title p {
       grid-column: middle;
-    }
+    } */
     
     .vidoverlay {
         position: absolute;
