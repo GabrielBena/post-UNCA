@@ -102,6 +102,19 @@
       border-color: rgba(0, 0, 0, 0.2);
     }
 
+    /* Make content more compact by adjusting main width */
+    d-article {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    
+    /* Adjust grid layout for more compact display */
+    @media(min-width: 1024px) {
+      .base-grid {
+        grid-template-columns: [screen-start] 1fr [page-start kicker-start] 50px [middle-start] 700px [middle-end] 50px [page-end kicker-end] 1fr [screen-end];
+      }
+    }
+
     /* TOC */
     @media(max-width: 1000px){
       d-contents {
@@ -226,10 +239,6 @@
 
     .vc {
       position: relative;
-    }
-
-    d-article {
-      grid-column: middle; /* Constrain article to the middle column(s) */
     }
   </style>
   <d-title>
