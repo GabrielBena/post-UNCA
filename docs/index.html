@@ -102,30 +102,10 @@
       border-color: rgba(0, 0, 0, 0.2);
     }
 
-    /* Make content wider and more compact */
+    /* Make content more compact by adjusting main width */
     d-article {
-      max-width: 1000px;
+      max-width: 1256px;
       margin: 0 auto;
-      font-size: 0.9em;
-      line-height: 1.5;
-    }
-    
-    /* Adjust paragraph spacing for compactness */
-    d-article p {
-      margin-bottom: 0.8em;
-    }
-    
-    /* Make headings more compact */
-    d-article h2, d-article h3 {
-      margin-top: 1em;
-      margin-bottom: 0.5em;
-    }
-    
-    /* Adjust grid layout for wider display */
-    @media(min-width: 1024px) {
-      .base-grid {
-        grid-template-columns: [screen-start] 1fr [page-start kicker-start] 50px [middle-start] 1000px [middle-end] 50px [page-end kicker-end] 1fr [screen-end];
-      }
     }
 
     /* TOC */
