@@ -69,6 +69,38 @@
     video {
       max-width: 100%;
     }
+    /* Custom width settings to make article wider */
+    d-article {
+      max-width: 900px !important; /* Increased from 800px */
+      width: 900px !important;
+      grid-column: middle;
+      font-size: 16px;
+    }
+    d-title, d-byline, d-bibliography {
+      max-width: 900px !important;
+      width: 900px !important;
+      grid-column: middle;
+    }
+    @media(min-width: 1280px) {
+      d-article {
+        max-width: 1000px !important;
+        width: 1000px !important;
+      }
+      d-title, d-byline, d-bibliography {
+        max-width: 1000px !important;
+        width: 1000px !important;
+      }
+    }
+    @media(min-width: 1600px) {
+      d-article {
+        max-width: 1100px !important;
+        width: 1100px !important;
+      }
+      d-title, d-byline, d-bibliography {
+        max-width: 1100px !important;
+        width: 1100px !important;
+      }
+    }
     .colab-root {
       display: inline-block;
       background: rgba(255, 255, 255, 0.75);
@@ -100,12 +132,6 @@
       color: #666;
       background: white;
       border-color: rgba(0, 0, 0, 0.2);
-    }
-
-    /* Make content more compact by adjusting main width */
-    d-article {
-      max-width: 1256px;
-      margin: 0 auto;
     }
 
     /* TOC */
